@@ -1,0 +1,95 @@
+:root {
+  --primary-gradient: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url("images/moving-van.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+/* BUTTONS */
+.btn-primary {
+  background: var(--primary-gradient);
+  border: none;
+  transition: .3s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(102,126,234,.5);
+}
+
+/* FEATURE CARDS */
+.feature-card {
+  background: linear-gradient(145deg, #1f1f1f, #2a2a2a);
+  padding: 25px;
+  border-radius: 20px;
+  transition: .3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,.5);
+}
+
+/* ABOUT BOX */
+.highlight-box {
+  background: #111;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+/* CAROUSEL */
+.carousel-item img {
+  height: 450px;
+  object-fit: cover;
+}
+
+/* FOOTER */
+footer {
+  background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+.footer-link {
+  color: #adb5bd;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #0d6efd;
+  padding-left: 5px;
+}
+
+footer i {
+  font-size: 1.3rem;
+  color: #adb5bd;
+}
+
+footer i:hover {
+  color: #0d6efd;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .carousel-item img {
+    height: 250px;
+  }
+}
